@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MediPlus</title>
+  <meta charset="ISO-8859-1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/js/bootstrap.min.js">
+  <link rel="stylesheet" href="static/popper.js-1.15.0/popper.js-1.15.0/dist/popper.min.js">
+  <link rel="stylesheet" href="static/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>	  
+   
+</head>
+
+<body id="myPage" >
+  <!--banner-->
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Book Doctor Appointment</a><hr>
+  <a href="#">Order Medicines</a>
+  <a href="#">Book Home Healthcare</a>
+  <a href="#">Get Online Consultation</a>
+  <a href="#">Find a doctor</a>
+  <a href="#">Quick enquiry</a>
+  </div>
+  <section id="banner" class="banner">
+    <div class="bg-color">
+     <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-fixed-top"  style="background-color:rgba(28,74,90, 0.9);">
+		  <!-- Brand/logo -->
+		  <a class="navbar-brand" href="#">
+		    <h1 style="font-size:55px; font-family: 'Chewy', cursive;color: red;margin:0px;"><span style="font-size:50px;cursor:pointer;color:pink" onclick="openNav()">&#9776;</span> MediPlus+</h1>
+		  </a>
+		  <!-- Links -->
+		  <div style="margin-right:10px;width:100%">
+		  
+              <ul style="padding-right:10px;">
+               <li class="float-right" style="margin:10px;"><button  style="color: white;background-color: RGBA(13, 70, 83, 0.78);border:none;"><h1><span><i class="fa fa-shopping-cart"></i></span>  Cart</h1></button></li>
+               <li class="float-right" style="margin:10px;" ><button onclick="document.getElementById('id01').style.display='block'"   style="color: white;background-color: RGBA(13, 70, 83, 0.78);border:none;"><h1>Login</h1></button></li>
+              </ul>
+    
+           </div>
+         
+	</nav>    
+	 
+      <div class="container">
+        <div class="row">
+        <div class="col-md-4"></div>
+          <div class="col-md-4 banner-info">
+            
+	            <div class="banner-text text-center">
+	              <h1 class="white" style="font-size:45px;">HEALTHCARE AT YOUR DESK!!</h1>
+	              <h3>Get your health checkup Today!!</h3>
+	              <button  class="btn btn-primary btn-appoint"><h2>Make an Appointment</h2></button>
+	              <span id="top"></span>
+	              <div class="overlay-detail text-center">
+	              <a href="#service"><i class="fa fa-angle-down"></i></a>
+	            </div>
+	            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="">
+  <div>
+  <center><legend style="font-size:4em;">LOGIN</legend></center>
+  <span onclick="document.getElementById('id01').style.display='none'"
+	class="close" title="Close Modal">&times;</span>
+  </div>
+   
+	
+	
+    <div class="container formhead">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit" class="login">Login</button>
+      <button type="submit" class="signup">Sign Up</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container formfoot" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+
+
+<!-- The deals -->
+<span id="top"></span>
+<div class="container-fluid" id="deals" >
+	
+		 <section class="deal"><br/><br/>
+			  <div class="card">
+				  <div class="card-body">
+					  <div class="card-title" >
+						  <h1>Deal of the Day <button class ="btn btn-primary" onclick="dayDeal" style="float: right;margin-right: 35px; font-size:16px;">View All</button>	</h1>				   
+					  </div>
+					  <br>
+					  	 <div class="container-fluid">
+						 <div class="row">
+							  
+							  <div class="col-sm-2 product">
+								<a href="/"><img class="responsive" src="static/img/gallery-1.svg"></a>
+								<p class="price">$19.99</p>
+								<a href="/"><h4 class="margin-bottom"><strong>Product name lorem ipsum dolor</strong></h4></a>
+								<p class="margin-bottom">Lorem ipsum dolor sit amet, qui iisque scripserit in, ne pri suas labitur, cu duo brute veniam.</p>
+								<div class="customform s-12 " >
+								   <div><button class="button rounded-btn submit-btn s-12" type="submit">Add to Cart</button></div>
+								</div>
+							  </div>
+							  <div class="col-sm-2 product">
+								<a href="/"><img class="responsive" src="static/img/gallery-1.svg"></a>
+								<p class="price">$19.99</p>
+								<a href="/"><h4 class="margin-bottom"><strong>Product name lorem ipsum dolor</strong></h4></a>
+								<p class="margin-bottom">Lorem ipsum dolor sit amet, qui iisque scripserit in, ne pri suas labitur, cu duo brute veniam.</p>
+								<div class="customform s-12 " >
+								   <div><button class="button rounded-btn submit-btn s-12" type="submit">Add to Cart</button></div>
+								</div>
+							  </div>
+							  <div class="col-sm-2 product">
+								<a href="/"><img class="responsive" src="static/img/gallery-1.svg"></a>
+								<p class="price">$19.99</p>
+								<a href="/"><h4 class="margin-bottom"><strong>Product name lorem ipsum dolor</strong></h4></a>
+								<p class="margin-bottom">Lorem ipsum dolor sit amet, qui iisque scripserit in, ne pri suas labitur, cu duo brute veniam.</p>
+								<div class="customform s-12 " >
+								   <div><button class="button rounded-btn submit-btn s-12" type="submit">Add to Cart</button></div>
+								</div>
+							  </div>
+							  <div class="col-sm-2 product">
+								<a href="/"><img class="responsive" src="static/img/gallery-1.svg"></a>
+								<p class="price">$19.99</p>
+								<a href="/"><h4 class="margin-bottom"><strong>Product name lorem ipsum dolor</strong></h4></a>
+								<p class="margin-bottom">Lorem ipsum dolor sit amet, qui iisque scripserit in, ne pri suas labitur, cu duo brute veniam.</p>
+								<div class="customform s-12 " >
+								   <div><button class="button rounded-btn submit-btn s-12" type="submit">Add to Cart</button></div>
+								</div>
+							  </div>
+							  <div class="col-sm-2 product">
+								<a href="/"><img class="responsive" src="static/img/gallery-1.svg"></a>
+								<p class="price">$19.99</p>
+								<a href="/"><h4 class="margin-bottom"><strong>Product name lorem ipsum dolor</strong></h4></a>
+								<p class="margin-bottom">Lorem ipsum dolor sit amet, qui iisque scripserit in, ne pri suas labitur, cu duo brute veniam.</p>
+								<div class="customform s-12 " >
+								   <div><button class="button rounded-btn submit-btn s-12" type="submit">Add to Cart</button></div>
+								</div>
+							  </div>
+							  
+						 </div>              
+				   </div>
+
+				  </div>
+				</div>
+		 </section>
+		 <section class="deal"><br/><br/>
+			  <div class="card">
+				  <div class="card-body">
+					  <div class="card-title" >
+						  <h1>Popular Products <button class ="btn btn-primary"style="float: right;margin-right: 35px;font-size:16px;" >View All</button></h1>					   
+					  </div>
+					 <div class="container-fluid">
+						 <div class="row">
+							  
+							  <div class="col-sm-2 product">
+								<a href="/"><img class="responsive" src="static/img/gallery-1.svg"></a>
+								<p class="price">$19.99</p>
+								<a href="/"><h4 class="margin-bottom"><strong>Product name lorem ipsum dolor</strong></h4></a>
+								<p class="margin-bottom">Lorem ipsum dolor sit amet, qui iisque scripserit in, ne pri suas labitur, cu duo brute veniam.</p>
+								<div class="customform s-12 " >
+								   <div><button class="button rounded-btn submit-btn s-12" type="submit">Add to Cart</button></div>
+								</div>
+							  </div>
+							  <div class="col-sm-2 product">
+								<a href="/"><img class="responsive" src="static/img/gallery-1.svg"></a>
+								<p class="price">$19.99</p>
+								<a href="/"><h4 class="margin-bottom"><strong>Product name lorem ipsum dolor</strong></h4></a>
+								<p class="margin-bottom">Lorem ipsum dolor sit amet, qui iisque scripserit in, ne pri suas labitur, cu duo brute veniam.</p>
+								<div class="customform s-12 " >
+								   <div><button class="button rounded-btn submit-btn s-12" type="submit">Add to Cart</button></div>
+								</div>
+							  </div>
+							  <div class="col-sm-2 product">
+								<a href="/"><img class="responsive" src="static/img/gallery-1.svg"></a>
+								<p class="price">$19.99</p>
+								<a href="/"><h4 class="margin-bottom"><strong>Product name lorem ipsum dolor</strong></h4></a>
+								<p class="margin-bottom">Lorem ipsum dolor sit amet, qui iisque scripserit in, ne pri suas labitur, cu duo brute veniam.</p>
+								<div class="customform s-12 " >
+								   <div><button class="button rounded-btn submit-btn s-12" type="submit">Add to Cart</button></div>
+								</div>
+							  </div>
+							  <div class="col-sm-2 product">
+								<a href="/"><img class="responsive" src="static/img/gallery-1.svg"></a>
+								<p class="price">$19.99</p>
+								<a href="/"><h4 class="margin-bottom"><strong>Product name lorem ipsum dolor</strong></h4></a>
+								<p class="margin-bottom">Lorem ipsum dolor sit amet, qui iisque scripserit in, ne pri suas labitur, cu duo brute veniam.</p>
+								<div class="customform s-12 " >
+								   <div><button class="button rounded-btn submit-btn s-12" type="submit">Add to Cart</button></div>
+								</div>
+							  </div>
+							  <div class="col-sm-2 product">
+								<a href="/"><img class="responsive" src="static/img/gallery-1.svg"></a>
+								<p class="price">$19.99</p>
+								<a href="/"><h4 class="margin-bottom"><strong>Product name lorem ipsum dolor</strong></h4></a>
+								<p class="margin-bottom">Lorem ipsum dolor sit amet, qui iisque scripserit in, ne pri suas labitur, cu duo brute veniam.</p>
+								<div class="customform s-12 " >
+								   <div><button class="button rounded-btn submit-btn s-12" type="submit">Add to Cart</button></div>
+								</div>
+							  </div>
+						 </div>              
+				   </div>
+					 
+				  </div>
+			  </div>
+		 </section>
+		 <section class="deal"><br/><br/>
+			  <div class="card">
+				  <div class="card-body">
+					  <div class="card-title" >
+						  <h1>Categories <button class ="btn btn-primary" style="float: right;margin-right: 35px;font-size:16px;">View All</button></h1>					   
+					  </div>
+					  <div class="container-fluid">
+						 <div class="row">
+							   <div class="col-sm-2 category">
+								  <img src="static/img/baby.jpg" alt="Baby Care" style="width:100%">
+								  <h1>Baby Care</h1>
+								  
+								  <p>Some text about the jeans..</p>
+							   </div> 
+							   <div class="col-sm-2 category">
+								  <img src="static/img/fitness.jpg" alt="Fitness & Wellness" style="width:100%">
+								  <h1>Fitness & Wellness</h1>
+								  
+								  <p>Some text about the jeans..</p>
+							   </div> 
+							   <div class="col-sm-2 category">
+								  <img src="static/img/family.jpeg" alt="Family Care" style="width:100%">
+								  <h1>Family Care</h1>
+								  
+								  <p>Some text about the jeans..</p>
+							   </div> 
+							   <div class="col-sm-2 category">
+								  <img src="static/img/women.jpg" alt="Women's Care" style="width:100%">
+								  <h1>Women's Care</h1>
+								  
+								  <p>Some text about the jeans..</p>
+							   </div> 
+							   <div class="col-sm-2 category">
+								  <img src="static/img/personal.jpg" alt="Personal Care" style="width:100%">
+								  <h1>Personal Care</h1>
+								  
+								  <p>Some text about the jeans..</p>
+							   </div> 
+							 
+				   </div>
+					  
+				  </div>
+				</div><br><br>
+			  </div>
+				
+		 </section>	
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+<!--service-->
+  <section id="service" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-4">
+          <h2 class="ser-title">Our Service</h2>
+          <hr class="botm-line ">
+          <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris cillum.</h4>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="service-info">
+            <div class="icon">
+              <i class="fa fa-stethoscope"></i>
+            </div>
+            <div class="icon-info">
+              <h4>24 Hour Support</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="service-info">
+            <div class="icon">
+              <i class="fa fa-ambulance"></i>
+            </div>
+            <div class="icon-info">
+              <h4>Emergency Services</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="service-info">
+            <div class="icon">
+              <i class="fa fa-user-md"></i>
+            </div>
+            <div class="icon-info">
+              <h4>Medical Counseling</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="service-info">
+            <div class="icon">
+              <i class="fa fa-medkit"></i>
+            </div>
+            <div class="icon-info">
+              <h4>Premium Healthcare</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact -->
+    <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="ser-title">Contact us</h2>
+          <hr class="botm-line">
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <h3>Contact Info</h3>
+          <div class="space"></div>
+          <p><i class="fa fa-map-marker fa-fw pull-left fa-2x"></i> Awesome Street<br> Patan, PTN 384265</p>
+          <div class="space"></div>
+          <p><i class="fa fa-envelope-o fa-fw pull-left fa-2x"></i>info@companyname.com</p>
+          <div class="space"></div>
+          <p><i class="fa fa-phone fa-fw pull-left fa-2x"></i>+1 800 123 1234</p>
+        </div>
+        <div class="col-md-8 col-sm-8 marb20">
+          <div class="contact-info">
+            <h3 class="cnt-ttl">Having Any Query!</h3>
+            <div class="space"></div>
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control br-radius-zero" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control br-radius-zero" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control br-radius-zero" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control br-radius-zero" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validation"></div>
+              </div>
+
+              <div class="form-action">
+                <button type="submit" class="btn btn-form">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div > <a href="#top" class="btn rounded-btn btn-primary active" style="margin:10px;">Back To Top</a></div><br>
+
+  <!--/ service-->
+    <footer id="footer">
+    <div class="top-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 marb20">
+            <div class="ftr-tle" id="about">
+              <h2 class="white no-padding">About Us</h2>
+            </div>
+            <div class="info-sec">
+              <h4>At Mediplus, we make a wide range of prescription medicines and other health products conveniently available and make appointments at your desk . Even second and third tier cities and rural villages can now have access to the latest medicines. Since we also offer generic alternatives to most medicines, online buyers can expect significant savings.</h4>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 marb20">
+            <div class="ftr-tle">
+              <h2 class="white no-padding">Quick Links</h2>
+            </div>
+            <div class="info-sec">
+            <h4>
+            <ul class="quick-info">
+                <li><a href="index.html"><i class="fa fa-circle"></i>Home</a></li>
+                <li><a href="#service"><i class="fa fa-circle"></i>Service</a></li>
+                <li><a href="#contact"><i class="fa fa-circle"></i>Appointment</a></li>
+              </ul>
+            </h4>
+              
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 marb20">
+            <div class="ftr-tle">
+              <h2 class="white">Follow us :</h2>
+            </div>
+            <div class="info-sec">
+              <ul class="social-icon">
+                <li class="bglight-blue"><i class="fa fa-facebook"></i></li>
+                <li class="bgred"><i class="fa fa-google-plus"></i></li>
+                <li class="bgdark-blue"><i class="fa fa-linkedin"></i></li>
+                <li class="bglight-blue"><i class="fa fa-twitter"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="footer-line">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            © Copyright Mediplus. All Rights Reserved
+            <div class="credits">
+              Designed by <a href="#">Pavan-Kumar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script>
+// Get the modal
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("myPage").style.marginLeft = "250px";
+  document.getElementById("myPage").style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("myPage").style.marginLeft = "0";
+  document.getElementById("myPage").style.backgroundColor = "white";
+} 
+var modal = document.getElementById('id01');
+
+//When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+ modal.style.display = "none";
+}
+}
+</script> 
+</html>
